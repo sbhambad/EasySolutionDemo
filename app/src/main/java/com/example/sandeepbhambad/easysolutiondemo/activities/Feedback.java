@@ -15,8 +15,9 @@ public class Feedback extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_feedback);
         mtoolbar = (Toolbar) findViewById(R.id.toolbar);
-//        setSupportActionBar(mtoolbar);
-//        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        setSupportActionBar(mtoolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
 
     }
 
