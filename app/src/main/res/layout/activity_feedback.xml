@@ -10,11 +10,24 @@
 
     <ImageView
         android:id="@+id/feedback_icon"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:src="@drawable/feedback_icon"
         android:layout_below="@+id/toolbar"
+        android:layout_marginTop="20dp"
         android:gravity="center"/>
+
+  <EditText
+      android:id="@+id/feedback_textare"
+      android:layout_width="match_parent"
+      android:layout_height="300dp"
+      android:layout_below="@+id/feedback_icon"
+      android:layout_marginTop="20dp"
+      android:gravity="center"
+      android:hint="@android:string/"
+
+
+      />
 
 
 </RelativeLayout>

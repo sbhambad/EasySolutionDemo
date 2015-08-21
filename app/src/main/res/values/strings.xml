@@ -7,5 +7,6 @@
     <string name="title_activity_splash">Splash</string>
     <string name="title_activity_register">Register</string>
     <string name="title_activity_feedback">Feedback</string>
+    <string name="feddback_hint_text">Please let us know how can we help</string>
 
 </resources>

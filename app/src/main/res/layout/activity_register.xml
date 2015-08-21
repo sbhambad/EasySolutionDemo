@@ -70,21 +70,60 @@
         android:orientation="horizontal"
         android:gravity="center_vertical"
         android:paddingLeft="10dp"
+        android:id="@+id/phoneView"
         >
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="+91"
-            android:textSize="18dp"/>
+            android:textSize="18dp"
+            android:textColor="@color/colorSecondaryText"/>
 
         <EditText
             android:layout_width="220dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:hint="Mobile Number"/>
+            android:hint="Mobile Number"
+            android:background="@null"
+            android:textSize="18sp"
+            android:lines="1"
+            android:maxLines="1"
+            android:textColor="@color/colorSecondaryText"
+            android:inputType="number"
+            android:id="@+id/phoneNumber"
+            android:maxLength="10"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/arrow"
+            android:id="@+id/submit"/>
 
 
     </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="By using Easy solution, you agree to our"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/phoneView"
+        android:textColor="@color/colorSecondaryText"
+        android:layout_marginTop="10dp"
+        android:id="@+id/termsHeader"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="Privacy and Terms"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/termsHeader"
+        android:textColor="@color/colorPrimary"
+       />
 
 </RelativeLayout>
