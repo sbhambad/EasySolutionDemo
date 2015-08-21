@@ -6,9 +6,8 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="Sandeep"
-        android:theme="@style/AppTheme"
-        android:screenOrientation="portrait">
-
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme" >
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name" />
@@ -29,6 +28,15 @@
         <activity
             android:name=".activities.Feedback"
             android:label="@string/title_activity_feedback" >
+        </activity>
+        <activity
+            android:name=".activities.Confirmation"
+            android:label="@string/title_activity_confirmation"
+            android:parentActivityName=".activities.Register">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.Register" />
+
         </activity>
     </application>
 

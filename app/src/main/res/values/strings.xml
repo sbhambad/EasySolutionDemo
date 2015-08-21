@@ -9,5 +9,8 @@
     <string name="title_activity_feedback">Feedback</string>
     <string name="feddback_hint_text">Please let us know how can we help</string>
     <string name="submit">Submit</string>
+    <string name="title_activity_confirmation">Confirmation</string>
+    <string name="next">NEXT</string>
+
 
 </resources>
