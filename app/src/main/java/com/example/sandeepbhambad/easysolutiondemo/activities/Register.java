@@ -1,12 +1,18 @@
 package com.example.sandeepbhambad.easysolutiondemo.activities;
 
+import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Toast;
 
+import com.example.sandeepbhambad.easysolutiondemo.MainActivity;
 import com.example.sandeepbhambad.easysolutiondemo.R;
 import com.example.sandeepbhambad.easysolutiondemo.adapters.IntroAdapter;
 
@@ -17,6 +23,8 @@ public class Register extends FragmentActivity {
     ImageView inroIndicatior2;
     ImageView inroIndicatior3;
     ImageView inroIndicatior4;
+    EditText phoneNo;
+    ImageView submit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +34,30 @@ public class Register extends FragmentActivity {
         viewPager = (ViewPager) findViewById(R.id.introPager);
         IntroAdapter padapter = new IntroAdapter(getSupportFragmentManager());
         viewPager.setAdapter(padapter);
+
+        phoneNo = (EditText) findViewById(R.id.phoneNumber);
+        submit = (ImageView) findViewById(R.id.submit);
+
+        submit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                String phonenumberText = phoneNo.getText().toString();
+
+                if (phonenumberText.length() == 0) {
+
+                    phoneNo.setError("Field cannot be left blank.");
+                } else if (phonenumberText.length() > 10 || phonenumberText.length() < 10) {
+                    phoneNo.setError("Please enter valid phone number.");
+                } else {
+                    Intent intent = new Intent(Register.this, MainActivity.class);
+                    startActivity(intent);
+                }
+
+                // Toast.makeText(getBaseContext(),phonenumberText,Toast.LENGTH_SHORT).show();
+
+            }
+        });
 
         inroIndicatior1 = (ImageView) findViewById(R.id.inroIndicatior1);
         inroIndicatior2 = (ImageView) findViewById(R.id.inroIndicatior2);
@@ -41,22 +73,22 @@ public class Register extends FragmentActivity {
             @Override
             public void onPageSelected(int i) {
 
-                if(i==0){
+                if (i == 0) {
                     inroIndicatior1.setImageResource(R.drawable.solid_circle);
                     inroIndicatior2.setImageResource(R.drawable.hollow_circle);
                     inroIndicatior3.setImageResource(R.drawable.hollow_circle);
                     inroIndicatior4.setImageResource(R.drawable.hollow_circle);
-                } else if(i==1){
+                } else if (i == 1) {
                     inroIndicatior1.setImageResource(R.drawable.hollow_circle);
                     inroIndicatior2.setImageResource(R.drawable.solid_circle);
                     inroIndicatior3.setImageResource(R.drawable.hollow_circle);
                     inroIndicatior4.setImageResource(R.drawable.hollow_circle);
-                } else if(i==2){
+                } else if (i == 2) {
                     inroIndicatior1.setImageResource(R.drawable.hollow_circle);
                     inroIndicatior2.setImageResource(R.drawable.hollow_circle);
                     inroIndicatior3.setImageResource(R.drawable.solid_circle);
                     inroIndicatior4.setImageResource(R.drawable.hollow_circle);
-                } else if(i==3){
+                } else if (i == 3) {
                     inroIndicatior1.setImageResource(R.drawable.hollow_circle);
                     inroIndicatior2.setImageResource(R.drawable.hollow_circle);
                     inroIndicatior3.setImageResource(R.drawable.hollow_circle);
