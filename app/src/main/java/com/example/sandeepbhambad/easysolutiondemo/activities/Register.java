@@ -10,6 +10,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.sandeepbhambad.easysolutiondemo.MainActivity;
@@ -25,6 +26,7 @@ public class Register extends FragmentActivity {
     ImageView inroIndicatior4;
     EditText phoneNo;
     ImageView submit;
+    TextView privacytext;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +39,7 @@ public class Register extends FragmentActivity {
 
         phoneNo = (EditText) findViewById(R.id.phoneNumber);
         submit = (ImageView) findViewById(R.id.submit);
+        privacytext = (TextView) findViewById(R.id.privacyText);
 
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,6 +58,18 @@ public class Register extends FragmentActivity {
                 }
 
                 // Toast.makeText(getBaseContext(),phonenumberText,Toast.LENGTH_SHORT).show();
+
+            }
+        });
+
+        privacytext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+                Intent intent = new Intent(Register.this, Privacy.class);
+                startActivity(intent);
+
 
             }
         });

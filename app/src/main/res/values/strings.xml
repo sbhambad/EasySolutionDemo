@@ -11,6 +11,10 @@
     <string name="submit">Submit</string>
     <string name="title_activity_confirmation">Confirmation</string>
     <string name="next">NEXT</string>
-
-
+    <string name="title_activity_privacy">Privacy</string>
+    <string name="title_privacy">Privacy Policy</string>
+    <string name="title_privacy_para1">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</string>
+    <string name="title_privacy_para2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</string>
+    <string name="title_privacy_para3">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</string>
+    <string name="title_privacy_para4">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</string>
 </resources>
