@@ -20,11 +20,13 @@ public class Splash extends Activity {
         Thread timerThread = new Thread() {
             public void run() {
                 try {
-                    sleep(300);
+
+                    sleep(1000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 } finally {
                     Intent intent = new Intent(Splash.this, Register.class);
+
                     startActivity(intent);
                 }
             }
