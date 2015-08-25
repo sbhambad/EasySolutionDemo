@@ -17,4 +17,11 @@
     <string name="title_privacy_para2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</string>
     <string name="title_privacy_para3">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</string>
     <string name="title_privacy_para4">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</string>
+    <string name="confirmation_text1">A text message with code was</string>
+    <string name="confirmation_text2">sent to your phone</string>
+    <string name="country_number">+91</string>
+    <string name="sms_code">Enter code</string>
+    <string name="resend_code">Resend code</string>
+    <string name="title_activity_home">Home</string>
+
 </resources>

@@ -53,7 +53,10 @@ public class Register extends FragmentActivity {
                 } else if (phonenumberText.length() > 10 || phonenumberText.length() < 10) {
                     phoneNo.setError("Please enter valid phone number.");
                 } else {
+
+
                     Intent intent = new Intent(Register.this, Confirmation.class);
+                    intent.putExtra("phonenumberText", phonenumberText);
                     startActivity(intent);
                 }
 
