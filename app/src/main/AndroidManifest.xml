@@ -32,11 +32,14 @@
         <activity
             android:name=".activities.Confirmation"
             android:label="@string/title_activity_confirmation"
-            android:parentActivityName=".activities.Register">
+            android:parentActivityName=".activities.Register" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".activities.Register" />
-
+        </activity>
+        <activity
+            android:name=".activities.Home"
+            android:label="@string/title_activity_home" >
         </activity>
     </application>
 

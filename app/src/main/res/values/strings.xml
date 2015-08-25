@@ -11,5 +11,12 @@
     <string name="title_activity_confirmation">Confirmation</string>
 
     <string name="next">NEXT</string>
+    <string name="title_activity_home">Home</string>
+
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+
 
 </resources>
