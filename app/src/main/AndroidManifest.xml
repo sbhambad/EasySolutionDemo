@@ -41,6 +41,14 @@
             android:name=".activities.Home"
             android:label="@string/title_activity_home" >
         </activity>
+        <activity
+            android:name=".activities.Privacy"
+            android:label="@string/title_activity_privacy" >
+            android:parentActivityName=".activities.Privacy" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.Privacy" />
+        </activity>
     </application>
 
 </manifest>
