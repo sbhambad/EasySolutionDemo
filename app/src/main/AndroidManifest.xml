@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.sandeepbhambad.easysolutiondemo" >
 
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -27,7 +29,11 @@
         </activity>
         <activity
             android:name=".activities.Feedback"
-            android:label="@string/title_activity_feedback" >
+            android:label="@string/title_activity_feedback"
+            android:parentActivityName=".activities.Home" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.Home" />
         </activity>
         <activity
             android:name=".activities.Confirmation"
